@@ -24,5 +24,6 @@ int* searchByValue (struct Simplelinkedlist *linked, int numSearch,int *sz);
 int searchByPos (struct Simplelinkedlist *linked, int posSearch);
 void updateByValue (struct Simplelinkedlist *linked, int numSearch, int numUpdate);
 void updateByPos (struct Simplelinkedlist *linked, int posSearch, int numUpdate);
+void freeSlinked (struct Simplelinkedlist *linked);
 
 #endif

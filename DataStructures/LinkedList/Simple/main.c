@@ -12,7 +12,7 @@ int main (void)
     if (linked==NULL)
         return -1;
 
-    free(linked);
+    freeSlinked(linked);
     return 0;
 }
 

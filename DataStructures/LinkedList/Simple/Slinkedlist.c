@@ -67,7 +67,7 @@ void insertAtBeginning (struct Simplelinkedlist *linked, int data)
 void insertAtMiddle (struct Simplelinkedlist *linked, int data, int pos)
 {
     int size = getSize(linked);
-    if (pos > size+2)
+    if (pos > size+1)
     {
         printf("Position given is greater than linked size \n");
         return ;
@@ -77,7 +77,7 @@ void insertAtMiddle (struct Simplelinkedlist *linked, int data, int pos)
         insertAtBeginning(linked,data);
         return;
     }
-    if (pos > size+1)
+    if (pos == size+1)
     {
         insertAtEnd(linked,data);
         return;
@@ -283,4 +283,11 @@ void updateByPos (struct Simplelinkedlist *linked, int posSearch, int numUpdate)
         i++;
     }
     temp->data = numUpdate;
+}
+
+void freeSlinked (struct Simplelinkedlist *linked)
+{
+    while (!isEmpty(linked))
+        deleteAtBeginning(linked);
+    free(linked);
 }

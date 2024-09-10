@@ -84,7 +84,7 @@ void freeQueue (struct SimpleQueue *queue)
     free(queue);
 }
 
-int  getFirts(struct SimpleQueue *queue)
+int  getFirst(struct SimpleQueue *queue)
 {
     if (isEmpty(queue))
     {

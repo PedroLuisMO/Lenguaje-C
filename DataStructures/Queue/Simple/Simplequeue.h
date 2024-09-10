@@ -17,6 +17,6 @@ void dequeue (struct SimpleQueue *queue);
 int isEmpty (struct SimpleQueue *queue);
 void display (struct SimpleQueue *queue);
 void freeQueue (struct SimpleQueue *queue);
-int  getFirts(struct SimpleQueue *queue);
+int  getFirst(struct SimpleQueue *queue);
 
 #endif
